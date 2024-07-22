@@ -1,0 +1,42 @@
+:root {
+  --white-color: #FFFFFF;
+  --sec-4-color: #141414;
+  --black-color: #000000;
+  --btn-color: #26C7EA;
+  --btn-bg-color: #0B0E66;
+  --btn-text-color: #26C6EA;
+  --sec-2-title-color: #0A3853;
+  --font-family: "Inter", sans-serif;
+  --second-family: "HeadlandOne", sans-serif;
+  --third-family: "Hammersmith One", sans-serif;
+}
+body {
+  font-size: 20px;
+  font-family: var(--font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container{
+  width: 1032px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

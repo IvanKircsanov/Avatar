@@ -25,8 +25,8 @@
   </head>
   <body>
     <!-- Header of the Avatar-Website -->
-    <header>
-      <div class="container header-container">
+    <header class="header">
+      <div class="container header-position">
         <a href="#" class="logo">
           <img src="./img/avatar-Logo-min.png" alt="avatar-logo" />
         </a>
@@ -42,110 +42,142 @@
           </li>
         </ul>
         <button type="button" class="log-in-button">Log In</button>
-        <span class="span-eng">ENG</span>
+      </div>
+      <div class="switcher-wrap">
+        <span class="span-lan">ENG</span>
+        <a href="#" class="span-link">
+          <img src="./img/Switcher.png" alt="switcher" class="span-img" />
+        </a>
+        <span class="span-lan">UA</span>
       </div>
     </header>
     <main>
       <section class="hero">
         <h2 class="hero-title">Discription for joining our clan</h2>
-        <ul class="hero-list">
-          <li class="hero-item">
+        <div class="container hero-position">
+            <div class="hero-content">
             <p class="hero-text">
               Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
               slu Na'viyä hapxì. Säwem nìayoeng!
             </p>
-          </li>
-          <li class="hero-item">
+            <div class="deko-arow"></div>
             <p class="hero-text">
               I'm speaking with the warrior! Your spirit goes with Eywa, your
               body stays behind to become part of the People. Fight with us!
             </p>
-          </li>
-        </ul>
-        <button type="button" class="hero-button">Join clan</button>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/avatar/" target="_blank">
-              <img src="./img/instagram.png" alt="instagram-logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/officialavatar" target="_blank">
-              <img src="./img/x.png" alt="x-logo" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=d9MyW72ELq0"
-              target="_blank"
-            >
-              <img src="./img/youtube.png" alt="youtube-logo" />
-            </a>
-          </li>
-        </ul>
+            <button type="button" class="hero-button">Join clan</button>
+          </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.instagram.com/avatar/" target="_blank" class="social-link">
+                <img src="./img/instagram.png" alt="instagram-logo" class="social-img"/>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://x.com/officialavatar" target="_blank" class="social-link">
+                <img src="./img/twitter.png" alt="x-logo" class="social-img"/>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.youtube.com/watch?v=d9MyW72ELq0"
+                target="_blank" class="social-link">
+                <img src="./img/youtube.png" alt="youtube-logo"  class="social-img"/>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="quote">
-        <h2 class="quote-title">Quote</h2>
-        <q class="quote-text">
-          “A LOT OF PEOPLE FROM THE SKY ARE GONNA COME. THEY’RE GONNA COME LIKE
-          A RAIN THAT NEVER ENDS.”
-        </q>
-        <p class="quote-name">JAKE SULLY</p>
+        <div class="container">
+          <h2 class="quote-title">Quote</h2>
+          <q class="quote-text">
+            A LOT OF PEOPLE FROM THE SKY ARE GONNA COME. THEY’RE GONNA COME
+            LIKE A RAIN THAT NEVER ENDS.
+          </q>
+          <p class="quote-name">JAKE SULLY</p>
+        </div>
       </section>
       <section class="trailer">
-        <h2 class="trailer-title">Trailer</h2>
-        <button type="button" class="trailer-button">WATCH TRAILER</button>
+        <div class="container">
+          <h2 class="trailer-title">Trailer</h2>
+          <button type="button" class="trailer-button">WATCH TRAILER</button>
+        </div>
       </section>
       <section class="quote">
-        <h2 class="quote-title">Quote</h2>
-        <q class="quote-text">
-          “ALL ENERGY IS ONLY BORROWED, AND ONE DAY YOU HAVE TO GIVE IT BACK.”
-        </q>
-        <p class="quote-name">JAKE SULLY</p>
+        <div class="container">
+          <h2 class="quote-title">Quote</h2>
+          <q class="quote-text">
+            ALL ENERGY IS ONLY BORROWED, AND ONE DAY YOU HAVE TO GIVE IT BACK.
+          </q>
+          <p class="quote-name">JAKE SULLY</p>
+        </div>
       </section>
       <section class="language">
-        <h2 class="language-title">Let's learn the Na'vi language</h2>
-        <!-- Only one list, 6 li -->
-        <ul class="language-list">
-          <li class="language-item">
-            <p class="language-text">Hello</p>
-            <p class="language-text">Kaltxì</p>
-          </li>
-          <li><p>How Are You?</p></li>
-          <li><p>Ngaru lu fpom srak?</p></li>
-          <li><p>I'm Well</p></li>
-          <li><p>Lu fpom</p></li>
-          <li><p>Thank you</p></li>
-          <li><p>Irayo si</p></li>
-          <li><p>I See You</p></li>
-          <li><p>Oel ngati kameie</p></li>
-          <li><p>Follow me!</p></li>
-          <li><p>Nong oet!</p></li>
-        </ul>
+        <div class="container">
+          <h2 class="language-title">Let's learn the Na'vi language</h2>
+          <ul class="language-list">
+            <li class="language-item">
+              <p class="language-text">Hello</p>
+              <p class="language-text">Kaltxì</p>
+            </li>
+            <li class="language-item">
+              <p class="language-text">How Are You?</p>
+              <p class="language-text">Ngaru lu fpom srak?</p>
+            </li>
+            <li class="language-item">
+              <p class="language-text">I'm Well</p>
+              <p class="language-text">Lu fpom</p>
+            </li>
+            <li class="language-item">
+              <p class="language-text">Thank you</p>
+              <p class="language-text">Irayo si</p>
+            </li>
+            <li class="language-item">
+              <p class="language-text">I See You</p>
+              <p class="language-text">Oel ngati kameie</p>
+            </li>
+            <li class="language-item">
+              <p class="language-text">Follow me!</p>
+              <p class="language-text">Nong oet!</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <q>
-          “OUR GREAT MOTHER DOES NOT TAKE SIDES, SHE PROTECTS ONLY THE BALANCE
-          OF LIFE.”
-        </q>
-        <p>NEYTIRI</p>
+      <section class="quote">
+        <div class="container">
+          <h2 class="quote-title">Quote</h2>
+          <q class="quote-text">
+            OUR GREAT MOTHER DOES NOT TAKE SIDES, SHE PROTECTS ONLY THE BALANCE
+            OF LIFE.
+          </q>
+          <p class="quote-name">NEYTIRI</p>
+        </div>
       </section>
     </main>
-    <footer>
-      <a href="#" class="logo">
-        <img src="./img/avatar-Logo-min.png" alt="avatar-logo" />
-      </a>
-      <ul>
-        <li>
-          <p>Q&A E-mail</p>
-          <a href="mailto:avatartwowqa@gmail.com">avatartwowqa@gmail.com</a>
-        </li>
-        <li>
-          <p>Cooperation E-mail</p>
-          <a href="mailto:avatartwowcoop@gmail.com">avatartwowcoop@gmail.com</a>
-        </li>
-      </ul>
-      <small>©2023 Avatar: The Way Of Water. All rights reserved</small>
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./img/avatar-Logo-min.png" alt="avatar-logo" />
+        </a>
+        <ul class="contacts">
+          <li class="contact-item">
+            <p class="contact-text">Q&A E-mail</p>
+            <a href="mailto:avatartwowqa@gmail.com" class="contact-link"
+              >avatartwowqa@gmail.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <p class="contact-text">Cooperation E-mail</p>
+            <a href="mailto:avatartwowcoop@gmail.com" class="contact-link"
+              >avatartwowcoop@gmail.com</a
+            >
+          </li>
+        </ul>
+        <small class="confidantional"
+          >©2023 Avatar: The Way Of Water. All rights reserved</small
+        >
+      </div>
     </footer>
   </body>
 </html>

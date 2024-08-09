@@ -1,11 +1,11 @@
 :root {
-  --white-color: #FFFFFF;
+  --white-color: #fff;
   --sec-4-color: #141414;
-  --black-color: #000000;
-  --btn-color: #26C7EA;
-  --btn-bg-color: #0B0E66;
-  --btn-text-color: #26C6EA;
-  --sec-2-title-color: #0A3853;
+  --black-color: #000;
+  --btn-color: #26c7ea;
+  --btn-bg-color: #0b0e66;
+  --btn-text-color: #26c6ea;
+  --sec-2-title-color: #0a3853;
   --font-family: "Inter", sans-serif;
   --second-family: "HeadlandOne", sans-serif;
   --third-family: "Hammersmith One", sans-serif;
@@ -13,6 +13,8 @@
 body {
   font-size: 20px;
   font-family: var(--font-family);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -35,8 +37,194 @@ img {
   display: block;
   max-width: 100%;
 }
-.container{
+.container {
   width: 1032px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  border-bottom: 3px solid var(--white-color);
+}
+.header-position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+  column-gap: 38px;
+}
+.menu-link {
+  font-weight: 300;
+  text-align: center;
+  color: var(--white-color);
+}
+.menu-link:hover {
+  font-weight: 600;
+  color: #94cfff;
+}
+.log-in-button {
+  font-family: var(--second-family);
+  font-weight: 400;
+  text-align: justify;
+  color: var(--btn-text-color);
+  width: 141px;
+  height: 41px;
+  background-color: var(--btn-bg-color);
+  border: 2px solid var(--btn-color);
+  border-radius: 35px 0;
+  padding-left: 37px;
+  padding-right: 36px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.switcher-wrap {
+  display: flex;
+  align-items: center;
+  width: 107px;
+  height: 20px;
+}
+.span-lan {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white-color);
+}
+.span-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Main */
+
+.hero {
+  margin: 0 auto;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  width: 1440px;
+  height: 740px;
+  background-image: url("../img/section1-background-min.png");
+  background-repeat: no-repeat;
+}
+.hero-title {
+  display: none;
+}
+.hero-position {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-content {
+  width: 281px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+.deko-arow {
+  width: 152px;
+  height: 40px;
+  background-image: url("../img/section1-pfeil-links-weiß.png");
+  margin: 0 auto;
+}
+.hero-button {
+  font-family: var(--second-family);
+  font-weight: 400;
+  width: 260px;
+  height: 80px;
+  background-color: var(--btn-bg-color);
+  font-size: 24px;
+  text-align: center;
+  color: var(--btn-color);
+  border: 3px solid var(--btn-color);
+  border-radius: 45px 0;
+  margin-top: 42px;
+}
+.social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 120px;
+  width: 50px;
+  height: 141px;
+}
+.quote {
+  height: 350px;
+  padding-top: 75px;
+  background-image: url("../img/section2-img.png");
+  background-repeat: no-repeat;
+  background-position: 520px 220px;
+  text-align: center;
+}
+.quote-title {
+  display: none;
+}
+.quote-text {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: justify;
+  color: var(--sec-2-title-color);
+}
+.quote-name {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--black-color);
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+.trailer {
+  width: 1440px;
+  height: 741px;
+  background-image: url("../img/section3-background-min.png");
+  padding-top: 330px;
+  margin: 0 auto;
+  padding-bottom: 330px;
+}
+.trailer-title {
+  display: none;
+}
+.trailer-button {
+  display: block;
+  width: 260px;
+  height: 80px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--btn-color);
+  border: 3px solid var(--btn-color);
+  border-radius: 45px 0;
+  width: 260px;
+  height: 80px;
+  background: var(--btn-bg-color);
+  margin: 0 auto;
+}
+
+/* Footer */
+
+.footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

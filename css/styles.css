@@ -1,6 +1,6 @@
 :root {
   --white-color: #fff;
-  --sec-4-color: #141414;
+  --sec-5-color: #141414;
   --black-color: #000;
   --btn-color: #26c7ea;
   --btn-bg-color: #0b0e66;
@@ -60,6 +60,8 @@ img {
   background-size: cover;
   align-items: center;
   border-bottom: 3px solid var(--white-color);
+  padding-left: 205px;
+  padding-right: 50px;
 }
 .header-position {
   display: flex;
@@ -215,6 +217,61 @@ img {
   background: var(--btn-bg-color);
   margin: 0 auto;
 }
+.language {
+  background-image: url("../img/section5-background-img.png");
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1440px;
+  height: 704px;
+}
+.language-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: justify;
+  color: var(--sec-5-color);
+  text-align: center;
+  margin-bottom: 45px;
+}
+.language-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 24px;
+}
+.language-item {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  background: rgba(255, 255, 255, 0.7);
+  flex-basis: calc((100% - 2 * 36px) / 3);
+  padding-top: 36px;
+  padding-bottom: 36px;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.language-item:nth-child(1),
+.language-item:nth-child(4) {
+  background-image: url("../img/section5-pfeil-links-min.png");
+}
+.language-item:nth-child(2),
+.language-item:nth-child(5) {
+  background-image: url("../img/section2-img.png");
+  background-size: 152px 40px;
+}
+.language-item:nth-child(3),
+.language-item:nth-child(6) {
+  background-image: url("../img/section5-pfeil-rechts-min.png");
+}
+.language-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--sec-5-color);
+}
 
 /* Footer */
 
@@ -227,4 +284,60 @@ img {
     url("../img/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1440px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+.footer-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  width: 689px;
+  row-gap: 16px;
+}
+.contact-text {
+  font-weight: 400;
+  text-align: justify;
+  color: var(--white-color);
+  width: 182px;
+}
+.contact-link {
+  font-weight: 400;
+  text-align: justify;
+  color: var(--white-color);
+  padding-left: 309px;
+}
+.confidantional {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--white-color);
+}
+.footer-logo {
+  display: contents;
+}
+.footer-logo::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 153px;
+  background-color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.contact-item {
+  display: flex;
+  background-image: url("../img/Dashline_1.png");
+  background-position: 130px;
+  background-repeat: no-repeat;
+  width: 665px;
+}
+.contact-item:last-child {
+  background-image: url("../img/Dashline_2.png");
+  width: 689px;
 }
